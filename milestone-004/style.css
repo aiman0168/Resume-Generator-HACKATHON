@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #FFF4B7;
+    color: #003161;
+}
+
+h1 {
+    color: #003161;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #003161;
+    color: #FFF4B7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #001a33;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFF4B7;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #014643;
+    background-color: #003161;
+    color: #FFF4B7;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+button {
+    background-color: #006A67;
+    color: #FFF4B7;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #003230;
+}
+
+button:hover {
+    background-color: #004543;
+}
+
+#resume-display {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #003161;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #001a33;
+    margin-top: 30px;
+}
+
+.left-section {
+    background-color: #006A67;
+    color: #FFF4B7;
+    padding: 20px;
+    width: 100%;
+    max-width: 35%;
+    text-align: center;
+    border-right: 5px solid #014643;
+}
+
+.right-section {
+    padding: 20px;
+    width: 100%;
+    max-width: 50%;
+    color: #FFF4B7;
+}
+
+.profilePicture {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #014643;
+    box-shadow: 0 4px 8px #014643;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: #FFF4B7;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #014947;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    color: #FFF4B7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #resume-display {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .left-section, .right-section {
+        max-width: 90%;
+        width: 100%;
+        border-right: none;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
