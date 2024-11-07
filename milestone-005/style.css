@@ -1,16 +1,19 @@
-/* General Body Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 5px;
-    background-color: #FFF4B7;
+    padding: 10px;
+    background-color: #F0F8FF;
     color: #003161;
 }
 
-/* Resume Display Styles */
+
 #resume-display {
     display: flex;
-    width: 80%;
+    width: 90%;
     max-width: 900px;
     margin: 0 auto;
     background: #003161;
@@ -20,10 +23,10 @@ body {
     margin-top: 30px;
 }
 
-/* Left Section of Resume */
+
 .left-section {
     background-color: #006A67;
-    color: #FFF4B7;
+    color: #F0F8FF;
     padding: 20px;
     width: 100%;
     max-width: 35%;
@@ -31,15 +34,15 @@ body {
     border-right: 5px solid #014643;
 }
 
-/* Right Section of Resume */
+
 .right-section {
     padding: 20px;
     width: 100%;
     max-width: 50%;
-    color: #FFF4B7;
+    color: #F0F8FF;
 }
 
-/* Profile Picture Styling */
+
 .profilePicture {
     display: block;
     margin: 0 auto;
@@ -53,22 +56,21 @@ body {
     object-fit: cover;
 }
 
-/* Print-Specific Styles */
+
 @media print {
-    /* Force Portrait Orientation */
+    
     @page {
         size: portrait;
         margin: 0.5in;
     }
 
     body {
-        background-color: #FFF4B7; /* Optional: keeps background for page */
+        background-color: #F0F8FF;
         color: #003161;
         margin: 0;
         padding: 0;
     }
 
-    /* Make the resume fit better on the page */
     #resume-display {
         display: flex;
         width: 100%;
@@ -79,7 +81,6 @@ body {
         flex-direction: row;
     }
 
-    /* Keep the left and right sections' structure intact */
     .left-section, .right-section {
         width: 48%;
         padding: 10px;
@@ -87,12 +88,10 @@ body {
         border: none;
     }
 
-    /* Hide form, buttons, and share URL during print */
     form, #share-url, button {
         display: none;
     }
 
-    /* Keep the profile picture size in print */
     .profilePicture {
         width: 120px;
         height: 120px;
@@ -101,7 +100,6 @@ body {
         box-shadow: none;
     }
 
-    /* Adjust the layout for smaller screens (like mobile) during print */
     @media (max-width: 768px) {
         #resume-display {
             flex-direction: column;
@@ -113,7 +111,7 @@ body {
     }
 }
 
-/* Other existing styles for the page */
+
 h1 {
     color: #003161;
     font-size: xx-large;
@@ -127,7 +125,7 @@ h1 {
 
 form {
     background-color: #003161;
-    color: #FFF4B7;
+    color: #F0F8FF;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px #001a33;
@@ -142,7 +140,7 @@ fieldset {
 legend {
     font-weight: bold;
     font-size: 18px;
-    color: #FFF4B7;
+    color: #F0F8FF;
 }
 
 label {
@@ -157,7 +155,7 @@ input, textarea {
     border-radius: 5px;
     border: 2px solid #014643;
     background-color: #003161;
-    color: #FFF4B7;
+    color: #F0F8FF;
 }
 
 input[type="file"] {
@@ -166,7 +164,7 @@ input[type="file"] {
 
 button {
     background-color: #006A67;
-    color: #FFF4B7;
+    color: #F0F8FF;
     font-size: 16px;
     padding: 10px;
     margin-bottom: 10px;
@@ -213,7 +211,7 @@ button:hover {
 #share-url {
     display: grid;
     place-items: center;
-    background-color: #FFF4B7;
+    background-color: #F0F8FF;
     padding: 20px;
     margin-top: 40px;
     border-radius: 5px;
@@ -239,7 +237,7 @@ button:hover {
     background-color: #004e4b;
 }
 
-/* Tooltip/Alert for Copy Success */
+
 #share-url .alert {
     background-color: #27ae60;
     color: white;
