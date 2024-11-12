@@ -272,13 +272,14 @@ button:hover {
     align-items: center;
 }
 
-/* General styles */
 .homepage {
-    margin: 0;
     font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Navbar Styling */
 nav {
     background-color: #003161;
     display: flex;
@@ -292,7 +293,7 @@ nav .logo {
 }
 
 nav .logo-img {
-    height: 50px; /* Set the height of the logo image */
+    height: 50px;
     width: auto;
 }
 
@@ -320,6 +321,7 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    flex: 1;
 }
 
 .text {
@@ -376,9 +378,8 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: absolute;
     width: 100%;
-    bottom: 0;
+    position: relative;
 }
 
 /* Responsive Styles */
@@ -417,11 +418,10 @@ footer {
     }
 
     .logo-img {
-        height: 40px; /* Adjust logo size for smaller screens */
+        height: 40px;
     }
 }
 
-/* For very small screens (Mobile) */
 @media (max-width: 480px) {
     .text {
         font-size: 22px;
@@ -447,11 +447,10 @@ footer {
     }
 
     .logo-img {
-        height: 35px; /* Smaller logo for very small screens */
+        height: 35px;
     }
 }
 
-/* General styles for the feature section */
 .features-section {
     display: flex;
     flex-direction: column;
@@ -461,9 +460,9 @@ footer {
 }
 
 .feature-item {
-    text-align: center; /* Center-align the text */
+    text-align: center;
     margin: 20px 0;
-    max-width: 600px; /* Set a max-width for better readability */
+    max-width: 600px;
 }
 
 .feature-item h2 {
@@ -479,8 +478,6 @@ footer {
     margin-top: 10px;
 }
 
-
-/* Make the section responsive */
 @media (max-width: 768px) {
     .features-section {
         padding: 20px;
@@ -491,7 +488,7 @@ footer {
     }
 
     .feature-item h2 {
-        font-size: 20px; /* Slightly smaller font size on smaller screens */
+        font-size: 20px;
     }
 
     .feature-item p {
@@ -506,7 +503,7 @@ footer {
     }
 
     .feature-item h2 {
-        font-size: 18px; /* Further reduce font size on very small screens */
+        font-size: 18px;
     }
 
     .feature-item p {
